@@ -1,0 +1,5 @@
+//para que muestre el logo en el nav
+<div class="logo"><a href="#"><img src="/Imagenes/logopaginaweb.png"></a>
+			  <a href="#home" id="navbar__logo"></a>
+		  </div>
+    
