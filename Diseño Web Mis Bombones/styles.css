@@ -114,15 +114,16 @@
     position: absolute;
     top: -1000px;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     z-index: -1;
+    padding-bottom: 1.5rem;
   }
 
   .navbar__menu.active {
-    background: #131313;
+    background: linear-gradient(to right, #c58181 45%, #fff9f0 100%);
     top: 100%;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
     z-index: 99;
     height: 60vh;
     font-size: 1.6rem;
@@ -136,8 +137,8 @@
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: #fff;
+    transition: all 0.4s ease-in-out;
+    background: #7d2a23;
   }
 
   .navbar__item {
@@ -146,22 +147,23 @@
 
   .navbar__links {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     display: table;
   }
 
   .navbar__btn {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
 
   .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
     height: 80px;
-    margin: 0;
+    width: 70%;
+    /*Lo que lo hace estar centrado pero manual porque sino se queda hacia la izquierda*/
+    margin-left: 70px;
   }
 
   #mobile-menu {
@@ -194,7 +196,7 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background: url(/Imagenes/Alfin.jpg) no-repeat center;
+  background: url(/Imagenes/ALfin.jpg) no-repeat center;
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -205,15 +207,15 @@
   justify-content: center;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px;
   height: 100vh;
   text-align: left;
-  padding: 30px;
+  padding: 30px; 
 }
 /*Lo que no me dejaba ver la imagen de fondo era esto, mejor dicho su color*/
 .hero__heading {
-  font-size: 100px;
-  margin-bottom: 24px;
+  font-size: 70px;
+  margin-bottom: 20px;
   color: #fff;
 }
 
@@ -226,8 +228,8 @@
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #ff6a00,
-    #ee0979
+    #fff,
+    #fff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -246,8 +248,8 @@
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #8f0eff,
-    #da22ff
+    #fff,
+    #fff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
@@ -255,9 +257,9 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
-
+/*Linea debajo de cada categoria*/
 .highlight {
-  border-bottom: 4px solid rgb(132, 0, 255);
+  border-bottom: 4px solid rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 768px) {
@@ -272,7 +274,7 @@
 
 /* About Section */
 .main {
-  background-color: #131313;
+  background-color: #fff9f0;
   padding: 10rem 0;
 }
 
@@ -290,7 +292,7 @@
 }
 
 .main__content {
-  color: #fff;
+  color: rgb(5, 5, 5);
   width: 100%;
 }
 
@@ -335,9 +337,9 @@
 
 .main__btn {
   font-size: 1.8rem;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #7d2a23;
+  background: -webkit-linear-gradient(to right, #c58181 45%, #fff9f0 100%);;
+  background: linear-gradient(to right, #c58181 45%, #fff9f0 100%);;
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
@@ -351,7 +353,7 @@
 .main__btn a {
   position: relative;
   z-index: 2;
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -362,7 +364,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff1ead;
+  background: #7d2a23;
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -482,63 +484,69 @@
   align-items: center;
   height: 100%;
   padding: 10rem 0;
+
 }
 
 .services h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  background-color: #c58181;
+  background-image: #c58181;
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
   font-size: 2.5rem;
 }
 
 .services__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr;
 }
 
 .services__card {
   margin: 10px;
-  height: 425px;
-  width: 300px;
-  border-radius: 4px;
+  height: 300px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
-  transition: 0.3s ease-in;
+  background-image: #c58181;
+  transition: 0.5s ease-in;
+}
+
+.services__card:nth-child(1) {
+  position: relative;
+  background: url(/Imagenes/bombones.jpg) no-repeat center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
 
 .services__card:nth-child(2) {
-  background: #1fa2ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #a6ffcb,
-    #12d8fa,
-    #1fa2ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #a6ffcb,
-    #12d8fa,
-    #1fa2ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  background: url(/Imagenes/pexels-marta-dzedyshko-6341572.jpg) no-repeat center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+/*Imagenes de los productos en el main*/
+.services__card:nth-child(3) {
+  position: relative;
+  background: url(/Imagenes/museo-del-chocolate-articulo.jpg) no-repeat center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
 
-.services__card:nth-child(3) {
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+.services__card:nth-child(4) {
+  position: relative;
+  background: url(/Imagenes/barras.jpg) no-repeat center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
 
 .services__card h2 {
@@ -549,26 +557,6 @@
   text-align: center;
   margin-top: 24px;
   font-size: 20px;
-}
-
-.services__btn {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.services__card button {
-  color: #fff;
-  padding: 14px 24px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  background: #131313;
-  font-size: 1rem;
-}
-
-.services__card button:hover {
-  cursor: pointer;
 }
 
 .services__card:hover {
