@@ -191,7 +191,7 @@
   }
 }
 
-/* Hero Section */
+/* Seccion Hero INDEX.HTML*/
 .hero {
   position: relative;
   height: 100vh;
@@ -215,6 +215,8 @@
 /*Lo que no me dejaba ver la imagen de fondo era esto, mejor dicho su color*/
 .hero__heading {
   font-size: 70px;
+  margin-right: 300px;
+  margin-left: 135px;
   margin-bottom: 20px;
   color: #fff;
 }
@@ -260,79 +262,7 @@
 /*Linea debajo de cada categoria, indicando donde estamos*/
 .highlight {
   border-bottom: 4px solid rgb(255, 255, 255);
-}
-
-@media screen and (max-width: 768px) {
-  .hero__heading {
-    font-size: 60px;
-  }
-
-  .hero__description {
-    font-size: 40px;
-  }
-}
-
-/* Sección sobre nosotros*/
-.main {
-  background-color: #fff9f0;
-  padding: 10rem 0;
-}
-
-.main__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  height: 90%;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0 50px;
-}
-
-.main__content {
-  color: rgb(5, 5, 5);
-  width: 100%;
-}
-
-.main__content h1 {
-  font-size: 2rem;
-  background-color: #fe3b6f;
-  background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-transform: uppercase;
-  margin-bottom: 32px;
-}
-
-.main__content h2 {
-  font-size: 4rem;
-  background: #ff8177; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #9114ff,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8f0eff,
-    #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-
-.main__content p {
-  margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
+  margin-top: ;
 }
 
 .main__btn {
@@ -344,6 +274,8 @@
   border: none;
   border-radius: 4px;
   margin-top: 2rem;
+  margin-right: 450px;
+  margin-left: 250px;
   cursor: pointer;
   position: relative;
   transition: all 0.35s;
@@ -369,6 +301,51 @@
   border-radius: 4px;
 }
 
+
+@media screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 60px;
+  }
+
+  .hero__description {
+    font-size: 40px;
+  }
+}
+
+/* Sección sobre nosotros*/
+.main {
+  background-color: #fff9f0;
+  padding: 30px 30px 30px 30px;
+  height: auto;
+  display: flex};
+}/*QUE ES ESTO ANTERIOR???,PERO FUNCIONA, hace que el responsive acompañe el background
+y no se pase el texto del bg blanco al negro de abajo de productos*/
+
+.main__container{
+  max-height: 650px;
+  z-index: 1;
+  width: 100%;
+  max-width: fit-content;
+  margin: 10px 10px 10px 10px;
+}
+
+.main__content {
+  color: rgb(5, 5, 5);
+  width: 100%;
+}
+
+.main__content h2 {
+  font-size: 4rem;
+  text-align: justify-all;
+  width: auto;
+  margin: 0;
+}
+
+.main__content p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 .main__btn:hover {
   color: #fff;
 }
@@ -381,16 +358,20 @@
   text-align: center;
 }
 
+/*Imagen de sobre nosotros*/
 .main__img--card {
+  float: left;
   margin: 10px;
-  height: 500px;
+  height: 333px;
   width: 500px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  background: url(/Imagenes/depositphotos_135290852-stock-photo-display-of-chocolate-sticks.jpg);
+  background-repeat: no-repeat;
+  background-image: cover;
+
 }
 
 .fa-layer-group,
@@ -398,11 +379,52 @@
   font-size: 14rem;
 }
 
-#card-2 {
-  background: #ff512f;
-  background: -webkit-linear-gradient(to right, #dd2476, #ff512f);
-  background: linear-gradient(to right, #dd2476, #ff512f);
+/* Seccion Hero */
+/*Categoría productos*/
+.hero_productos {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: url(/Imagenes/newsteller2.jpg) no-repeat center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
 }
+.hero__container_productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+/*Lo que no me dejaba ver la imagen de fondo era esto, mejor dicho su color*/
+
+.hero__heading__productos span {
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff6a00,
+    #ee0979
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fff,
+    #fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+}
+
+/*Linea debajo de cada categoria, indicando donde estamos*/
+.highlight {
+  border-bottom: 4px solid rgb(255, 255, 255);
+  margin-top: ;
+}
+
+
 
 /* Mobile Responsive */
 @media screen and (max-width: 1100px) {
@@ -488,17 +510,16 @@
 }
 
 .services h1 {
-  background-color: #d6bebe;
-  background-image: #d6bebe;
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  margin-top: 5rem;
-  font-size: 2.5rem;
+  color: #ffffff;
+  margin: 50px;
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: -webkit-linear-gradient(to right, #bca89f, #8b6c5c, #5b3e31);
+  background: linear-gradient(to right, #ad9574, #8b6c5c, #5b3e31);
 }
-
+/*Para crear la grilla*/
 .services__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
@@ -515,6 +536,7 @@
   color: #fff;
   background-image: #c58181;
   transition: 0.5s ease-in;
+  padding: ;
 }
 /*cada (fr)imagen de producto*/
 .services__card:nth-child(1) {
@@ -609,6 +631,84 @@
   }
 }
 
+/*Seccion Newsteller*/
+
+.main__news {
+  position: relative;
+  overflow: hidden;
+  background: url(/Imagenes/newsteller5.jpg) no-repeat;
+  height: 1200px;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main__container__news {
+  display: flex;
+  flex-direction: column;
+  max-height: 650px;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0;
+}
+
+.main__content__news {
+  color: #fff;
+}
+
+.main__content__news h1 {
+  font-size: 4rem;
+  margin: 0 0 0 100px;
+  padding-top: 200px;
+}
+
+.main__content__news p {
+  padding: 10px 0 20px 100px;
+  font-size: 2rem;
+  margin: 0 500px 0 0;
+}
+
+.main__btn-news {
+  font-size: 1.8rem;
+  background: #7d2a23;
+  background: -webkit-linear-gradient(to right, #c58181 45%, #fff9f0 100%);;
+  background: linear-gradient(to right, #c58181 45%, #fff9f0 100%);;
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 0 0 100px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+  }
+  
+.main__btn-news a {
+  position: relative;
+  z-index: 2;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+  
+.main__btn-news:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #7d2a23;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__btn-news:hover {
+  color: #fff;
+  transition: 0.7 ease;
+}
+
+
 /* Footer CSS */
 .footer__container {
   background-color: #131313;
@@ -645,7 +745,7 @@
   align-items: flex-start;
   margin: 16px;
   text-align: left;
-  width: 160px;
+  width: 175px;
   box-sizing: border-box;
 }
 
@@ -1002,3 +1102,48 @@
     width: 100%;
   }
 }
+
+/*Categoría productos*/
+/* Seccion Hero */
+
+/*.hero__productos {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background: url(/Imagenes/ALfin.jpg) no-repeat center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+.hero__container__productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 50px;
+  height: 100vh;
+  text-align: left;
+  padding: 30px; 
+}
+/*Lo que no me dejaba ver la imagen de fondo era esto, mejor dicho su color*/
+/*.hero__heading__productos {
+  font-size: 70px;
+  margin-right: 300px;
+  margin-left: 135px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero__heading__productos span {
+  background: #ee0979; /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right,#ff6a00,#ee0979); 
+  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right,#fff,#fff); 
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -mo-text-fill-color: transparent;
+}*/
