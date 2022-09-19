@@ -196,7 +196,7 @@
     position: relative;
     height: 50vh;
     overflow: hidden;
-    background: url(/Imagenes/newsteller2.jpg) no-repeat center;
+    background: url(./Imagenes/newsteller2.jpg) no-repeat center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -265,7 +265,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(/Imagenes/BombonesClasicos/portadaclasicosproductos.jpg);
+    background: url(./Imagenes/BombonesClasicos/portadaclasicosproductos.jpg);
     background-repeat: no-repeat;
     background-image: cover; 
 }
@@ -280,7 +280,7 @@
     padding: auto;
     flex-direction: column;
     justify-content: center;
-    background: url(/Imagenes/TortasyPostres/portadatortasypostresproductos.jpg);
+    background: url(./Imagenes/TortasyPostres/portadatortasypostresproductos.jpg);
     background-repeat: no-repeat;
     background-image: cover;
 }
@@ -295,7 +295,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(/Imagenes/ChocolatesPersonalizados/portadaproductoschocospersonalizados.jpg);
+    background: url(./Imagenes/ChocolatesPersonalizados/portadaproductoschocospersonalizados.jpg);
     background-repeat: no-repeat;
     background-image: cover;
 }
@@ -310,7 +310,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(/Imagenes/Tabletas/portadaproductostabletas.jpg);
+    background: url(./Imagenes/Tabletas/portadaproductostabletas.jpg);
     background-repeat: no-repeat;
     background-image: cover; 
 }
@@ -325,7 +325,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(/Imagenes/FechasDelAño/portadaproductosfechasdelaño.jpg);
+    background: url(./Imagenes/FechasDelAño/portadaproductosfechasdelaño.jpg);
     background-repeat: no-repeat;
     background-image: cover; 
 }
@@ -340,7 +340,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(/Imagenes/Delicatessen/portadaproductosdelicatessen.jpg);
+    background: url(./Imagenes/Delicatessen/portadaproductosdelicatessen.jpg);
     background-repeat: no-repeat;
     background-image: cover;
 }
@@ -355,7 +355,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(/Imagenes/OcasionesEspeciales/portadaproductosocasionesespeciales.jpg);
+    background: url(./Imagenes/OcasionesEspeciales/portadaproductosocasionesespeciales.jpg);
     background-repeat: no-repeat;
     background-image: cover;
 }
@@ -370,7 +370,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(/Imagenes/Corazones/portadaproductoscorazones.jpg);
+    background: url(./Imagenes/Corazones/portadaproductoscorazones.jpg);
     background-repeat: no-repeat;
     background-image: cover; 
 }
@@ -504,7 +504,7 @@
     position: relative;
     height: 100vh;
     overflow: hidden;
-    background: url(/Imagenes/newsteller2.jpg) no-repeat center;
+    background: url(./Imagenes/newsteller2.jpg) no-repeat center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -669,7 +669,7 @@
   /*cada (fr)imagen de producto*/
 .services__card:nth-child(1) {
     position: relative;
-    background: url(/Imagenes/BombonesClasicos/bombones.jpg) no-repeat center;
+    background: url(./Imagenes/BombonesClasicos/bombones.jpg) no-repeat center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -677,7 +677,7 @@
   
 .services__card:nth-child(2) {
     position: relative;
-    background: url(/Imagenes/TortasyPostres/pexels-marta-dzedyshko-6341572.jpg) no-repeat center;
+    background: url(./Imagenes/TortasyPostres/pexels-marta-dzedyshko-6341572.jpg) no-repeat center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -685,7 +685,7 @@
   /*Imagenes de los productos en el main*/
   .services__card:nth-child(3) {
     position: relative;
-    background: url(/Imagenes/ChocolatesPersonalizados/portada.jpg) no-repeat center;
+    background: url(./Imagenes/ChocolatesPersonalizados/portada.jpg) no-repeat center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -693,7 +693,7 @@
   
 .services__card:nth-child(4) {
     position: relative;
-    background: url(/Imagenes/Tabletas/barrasi.jpg) no-repeat center;
+    background: url(./Imagenes/Tabletas/barrasi.jpg) no-repeat center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -701,7 +701,7 @@
   
 .services__card:nth-child(5) {
     position: relative;
-    background: url(/Imagenes/FechasDelAño/pexels-thuanny-gantuss-7371073.jpg) no-repeat center;
+    background: url(./Imagenes/FechasDelAño/pexels-thuanny-gantuss-7371073.jpg) no-repeat center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -717,7 +717,7 @@
   
 .services__card:nth-child(7) {
     position: relative;
-    background: url(/Imagenes/OcasionesEspeciales/esta.jpg) no-repeat center;
+    background: url(./Imagenes/OcasionesEspeciales/esta.jpg) no-repeat center;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -725,7 +725,7 @@
   
 .services__card:nth-child(8) {
     position: relative;
-    background: url(/Imagenes/Corazones/esta.jpg) no-repeat center;
+    background: url(./Imagenes/Corazones/esta.jpg) no-repeat center;
     background-size: cover;
     justify-content: center;
     align-items: center;
