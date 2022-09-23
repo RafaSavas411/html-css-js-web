@@ -254,81 +254,54 @@
   }
 
   /*Seccion de Blog*/
-  .blogs {
-    margin: 0 auto;
-    max-width: 2000px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    font-family: sans-serif;
-    gap: 35px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: #cec0ba;
-  }
-/*Noticias*/
-  .nota1__img {
+  .contact__container {
     width: 100%;
-    display: block;
-  }  
-
-  .nota1__img:hover{
-    opacity: 0.7;
-    transition: 0.3s ease-in;
-    cursor: pointer;
-  }
-
-  .nota1__content {
-    line-height: 1.5;
-    font-size: 0.9rem;
-    padding: 15px;
-    background: #fafafa;
-  }
-
-  .nota1__content h3 {
-    font-size: 20px;
-  }
-
-  .nota1__content h4 {
-    font-size: 15px;
-    padding-bottom: 15px;
-  }
-
-  .nota1__content > p:first-of-type {
-    margin-top: 0;
-  }
-
-  .nota1__content > p:last-of-type {
-    margin-bottom: 0;
-  }
-
-  .nota1__info {
-    padding: 15px;
+    height: 80vh;
+    background: #fff9f0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: #eeeeee;
-    font-size: 0.8rem;
-    border-bottom: 2px solid #cccccc;
+    justify-content: center;
+  }
+
+  form {
+    background: #fdf2e3;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+
+  form h3 {
     color: #555;
-  }
-  
-  .nota1__info span {
-    font-size: 15px;
-    margin-right: 8px;
+    font-weight: 800;
+    margin-bottom: 20px;
   }
 
-  .nota1__link {
-    color: #64968c;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 15px;
+  form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: #f5f5f5;
+    font-size: 16px;
   }
 
-  .nota1__link:hover {
-    text-decoration: underline;
+  form button {
+    padding: 15px;
+    background: #4c3228;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 20px;
+
   }
+
 
   /* Mobile Responsive de sobre nosotros*/
   @media screen and (max-width: 1100px) {
@@ -564,7 +537,8 @@
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.6) 100%);
+        rgba(17, 17, 17, 0.6) 100%
+      );
     background-size: cover;
     position: relative;
     color: #fff;

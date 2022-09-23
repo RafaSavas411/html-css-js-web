@@ -611,6 +611,7 @@ y no se pase el texto del bg blanco al negro de abajo de productos*/
 
 .services__card:hover {
   transform: scale(1.075);
+  opacity: 0.5;
   transition: 0.3s ease-in;
   cursor: pointer;
 }
@@ -892,8 +893,7 @@ y no se pase el texto del bg blanco al negro de abajo de productos*/
       to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.6) 100%
-    ),
-    url('./images/pic3.jpg');
+    );
   background-size: cover;
   position: relative;
   color: #fff;
@@ -908,8 +908,7 @@ y no se pase el texto del bg blanco al negro de abajo de productos*/
       to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(17, 17, 17, 0.9) 100%
-    ),
-    url('./images/pic4.jpg');
+    );
 }
 
 .services__card h2 {
