@@ -42,6 +42,7 @@
     display: flex;
     align-items: center;
     list-style: none;
+    margin-right: 200px;
   }
   
   .navbar__item {

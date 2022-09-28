@@ -42,6 +42,7 @@
   display: flex;
   align-items: center;
   list-style: none;
+  margin-right: 200px;
 }
 
 .navbar__item {
@@ -249,7 +250,7 @@ grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 grid-column-gap: 30px;
 grid-row-gap: 20px;
 background: #f3c3c3;
-padding: 30px 30px 30px 30px;
+padding: 30px 30px 30px 180px;
 width: 100%;
 }
 
@@ -264,6 +265,7 @@ justify-content: center;
 background: url(./Imagenes/BombonesClasicos/portadaclasicosproductos.jpg);
 background-repeat: no-repeat;
 background-image: cover; 
+
 }
 
 .main__img2 {
@@ -376,34 +378,42 @@ background-image: cover;
 grid-area: 1 / 2 / 2 / 3;
 flex-wrap: wrap;
 flex-direction: column;
+padding-right: 150px;
 }
 
 .main__content2 { 
 grid-area: 2 / 2 / 3 / 3; 
+padding-right: 150px;
 }
 
 .main__content3 { 
 grid-area: 3 / 2 / 4 / 3; 
+padding-right: 150px;
 }
 
 .main__content4 { 
 grid-area: 4 / 2 / 5 / 3; 
+padding-right: 150px;
 }
 
 .main__content5 { 
 grid-area: 5 / 2 / 6 / 3; 
+padding-right: 150px;
 }
 
 .main__content6 { 
 grid-area: 6 / 2 / 7 / 3; 
+padding-right: 150px;
 }
 
 .main__content7 { 
 grid-area: 7 / 2 / 8 / 3; 
+padding-right: 150px;
 }
 
 .main__content8 { 
 grid-area: 8 / 2 / 9 / 3; 
+padding-right: 150px;
 }
 
 /*Titulos de productos con descripción*/

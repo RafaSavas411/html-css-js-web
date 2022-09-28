@@ -42,6 +42,7 @@
   display: flex;
   align-items: center;
   list-style: none;
+  margin-right: 200px;
 }
 
 .navbar__item {
@@ -315,8 +316,8 @@
 
 /* Sección Historia del chocolate*/
 .main {
-  background-color: #fff9f0;
-  padding: 30px 30px 30px 30px;
+  background-color: #e7dad3;
+  padding: 30px 150px 30px 150px;
   height: auto;
   display: flex};
 }/*QUE ES ESTO ANTERIOR???,PERO FUNCIONA, hace que el responsive acompañe el background
@@ -336,14 +337,14 @@ y no se pase el texto del bg blanco al negro de abajo de productos*/
 }
 
 .main__content h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: justify-all;
   width: auto;
   margin: 0;
 }
 
 .main__content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
@@ -369,7 +370,7 @@ y no se pase el texto del bg blanco al negro de abajo de productos*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url(./Imagenes/depositphotos_135290852-stock-photo-display-of-chocolate-sticks.jpg);
+  background: url(./Imagenes/historiaDelChocolate.jpg);
   background-repeat: no-repeat;
   background-image: cover;
 
@@ -684,6 +685,8 @@ y no se pase el texto del bg blanco al negro de abajo de productos*/
   position: relative;
   transition: all 0.35s;
   outline: none;
+  color: rgb(0, 0, 0);
+  transition: all 0.7s ease;
   }
   
 .main__btn-news a {
@@ -1023,6 +1026,7 @@ y no se pase el texto del bg blanco al negro de abajo de productos*/
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
+ 
 }
 
 .footer__link--items a:hover {
