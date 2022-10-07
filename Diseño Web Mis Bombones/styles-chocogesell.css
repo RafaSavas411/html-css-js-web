@@ -281,7 +281,7 @@
     text-align: center;
     justify-content: center;
     width: auto;
-    margin: 0;
+    margin: 0 0 15px 0;
     padding-top: 30px;
   }
   /*CHEQUEAR ESTO PARA LOS ESPACIOS ENTRE LAS LINEAS DEL PARRAFO*/
@@ -292,6 +292,11 @@
 
   .main__content h3 {
     margin-top: 50px;
+  }
+
+  .main__content li {
+    font-weight: 540;
+    margin-left: 20px;
   }
   
   .main__btn:hover {
@@ -310,13 +315,13 @@
   .main__img--card {
     
     margin: 0 auto;
-    height: 428px;
-    width: 1075px;
+    height: 608px;
+    width: 1080px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(./Imagenes/Blog/kk\ landing.jpg);
+    background: url(./Imagenes/Blog/chocogesellBlog.PNG);
     background-repeat: no-repeat;
     background-image: cover;
   
